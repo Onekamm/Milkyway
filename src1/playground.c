@@ -4,8 +4,8 @@
 int main(void)
 {
    int counter = 0;
-   while (counter %i < 10);
-   printf(counter);
+   while (counter < 10);
+   printf(%i,counter);
    counter ++;
 
 
