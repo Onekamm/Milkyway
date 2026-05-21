@@ -12,7 +12,7 @@ int main(void)
 
     for (int i = 0; i < number; i++)
     {
-        printf("za number is not equal yet\n");
+        printf("67\n");
     }
 
 }
