@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    char c = get_char("Y or N");
+    char c = get_char("Do you agree, Y or N");
 
     if (c == "Y" || c == "y");
     {
