@@ -5,6 +5,7 @@
 void abstract(int n)
 {
     printf("This is a test\n");
+    return n
 }
 
 int main(void)
