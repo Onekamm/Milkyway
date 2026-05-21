@@ -7,7 +7,7 @@ int main(void)
 
     if (c == "Y" || c == "y");
     {
-        printf("You chose Yes");
+        printf("You chose Yes\n");
     }
 
 
