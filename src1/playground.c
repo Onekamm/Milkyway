@@ -4,11 +4,13 @@
 int main(void)
 {
     int number;
-    do;
+    do
+
     {
-        number = get_int("Please enter a number");
+        number = get_int("Please enter a number\n");
+
     }
-    while(number < 0)
+    while(number <= 0);
 
     for (int i = 0; i < number; i++)
     {
