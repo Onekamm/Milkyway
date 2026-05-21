@@ -5,7 +5,7 @@ int main(void)
 {
    int counter = 0;
    while (counter < 10);
-   printf(%i,counter);
+   printf("counter);
    counter ++;
 
 
