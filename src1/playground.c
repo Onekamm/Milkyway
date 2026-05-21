@@ -3,12 +3,11 @@
 
 int main(void)
 {
-   int counter = 0;
-   while (counter < 10)
-   {
-    printf("%d\n",counter);
-    counter ++;
-   }
+    int number = get_int("Enter za number\n");
 
+    for (int i = 0; i < number; i++)
+    {
+        printf("za number is not equal yet\n");
+    }
 
 }
