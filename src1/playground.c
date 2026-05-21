@@ -17,4 +17,10 @@ int main(void)
         printf("67\n");
     }
 
+
 }
+void abstract(void)
+{
+    printf("This is a test\n");
+}
+
