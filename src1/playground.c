@@ -3,11 +3,10 @@
 
 int main(void)
 {
-    int number = get_int("Enter za number\n");
-    while (number <= 0)
+    int number;
+    do;
     {
-        printf("This is not a valid number please input a number larger than 0\n");
-        number = get_int("Enter za number\n");
+        number = get
     }
 
     for (int i = 0; i < number; i++)
