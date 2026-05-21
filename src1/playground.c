@@ -1,13 +1,10 @@
 #include <stdio.h>
 #include <cs50.h>
 
+void abstract(int n);
 
-void abstract(void)
-{
-    printf("This is a test\n");
-}
 
-int main(void)
+int main(abstract)
 {
     for (int i = 0; i < n; i++)
     {
@@ -15,5 +12,8 @@ int main(void)
     }
 }
 
-
+void abstract(int n)
+{
+    printf("This is a test\n");
+}
 
