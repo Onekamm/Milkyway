@@ -3,9 +3,9 @@
 
 int main(void)
 {
-    char c = get_char("Y or N")
+    char c = get_char("Y or N");
 
-    if (c == Y || C == y);
+    if (c == "Y" || c == "y");
     {
         printf("You chose Yes");
     }
