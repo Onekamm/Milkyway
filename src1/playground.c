@@ -14,6 +14,10 @@ int main(abstract)
 
 void abstract(int n)
 {
-    printf("This is a test\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("This is a test\n");
+
+    }
 }
 
