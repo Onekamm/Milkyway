@@ -2,10 +2,9 @@
 #include <cs50.h>
 
 
-void abstract(int n)
+void abstract(void)
 {
     printf("This is a test\n");
-    return n
 }
 
 int main(void)
