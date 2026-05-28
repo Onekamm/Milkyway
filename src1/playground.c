@@ -1,23 +1,21 @@
-#include <stdio.h>
 #include <cs50.h>
+#include <stdio.h>
 
-void abstract(int n);
-
-
-int main(abstract)
+int main(void)
 {
-    for (int i = 0; i < n; i++)
-    {
-        abstract();
-    }
+    int input1 = get_int("Number1 ");
+    int input2 = get_int("Number2 " );
+    char operator  = get_str("what is your operator\n")
+
+    int result;
+
+    calculate(input1,input2,operator);
+
+
 }
 
-void abstract(int n)
+int calculate(input1,input2,operator)
 {
-    for (int i = 0; i < n; i++)
-    {
-        printf("This is a test\n");
-
-    }
+    for (i )
 }
 
