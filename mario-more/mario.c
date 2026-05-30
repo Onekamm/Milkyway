@@ -25,22 +25,5 @@ void make_pyramid(int number)
 {
     char s[] = "#";
     // for each row do something
-    for (int row = 0; row < number; row++)
-    {
-        int spaces = number - row - 1;
-        
-        for(int column = 0; column <= row; column ++)
-        {
-            printf("%*s",spaces,s);
-        }
-
-
-        for (int column2 = 0; column2 <= row; column2 ++)
-        {
-            printf("%s",s);
-        }
-        printf("\n");
-     }
-
-    printf("\n");
+    
 }
