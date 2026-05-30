@@ -27,9 +27,9 @@ void make_pyramid(int number)
     // for each row do something
     for (int row = 0; row < number; row ++)
     {
-        for (int num = 0; num < row + 1; num ++)
+        for (int num = 0; num < row ; num ++)
         {
-            printf("#)
+            printf("#");
         }
 
     }
