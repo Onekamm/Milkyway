@@ -25,6 +25,9 @@ void make_pyramid(int number)
 {
     char s[] = "#";
     // for each row do something
-    f
+    for (int row = 0; row < number; row ++)
+    {
+        
+    }
 
 }
