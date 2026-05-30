@@ -23,15 +23,24 @@ int get_num(void)
 
 void make_pyramid(int number)
 {
-    int num = 0;
+    char s[] = "#";
     // for each row do something
     for (int row = 0; row < number; row++)
     {
-        // for each column print items equal to number of row
-        for (int column = 0; column <= row; column ++)
+        int spaces = number - row - 1;
+        
+        for(int column = 0; column <= row; column ++)
         {
-            printf("#");
+            printf("%*s",spaces,s);
+        }
+
+
+        for (int column2 = 0; column2 <= row; column2 ++)
+        {
+            printf("%s",s);
         }
         printf("\n");
-    }
+     }
+
+    printf("\n");
 }
