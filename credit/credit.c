@@ -1,18 +1,27 @@
 #include <stdio.h>
 #include <cs50.h>
 
-
+int check_number(void);
 
 int main(void)
 {
-    printf("Creating the credit number checker");
+    check_number();
 }
 
 
 
 
 
-int get_number(void)
+int check_number(void)
 {
-    pass;
+    while(true)
+    {
+        int number = get_long("Number: ");
+        if (number % 10 > 100 )
+        {
+            number % 10;
+        }
+        printf("%d",number);
+    }
+
 }
