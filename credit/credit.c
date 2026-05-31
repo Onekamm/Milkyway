@@ -17,11 +17,15 @@ int check_number(void)
     while(true)
     {
         int number = get_long("Number: ");
-        if (number % 10 > 100 )
+        while(number > 100){
+             if (number % 10 > 100 )
         {
             number % 10;
         }
         printf("%d",number);
+
+        }
+
     }
 
 }
