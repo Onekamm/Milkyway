@@ -2,10 +2,13 @@
 #include <cs50.h>
 
 int check_number(void);
+int calculate_card(number);
 
 int main(void)
 {
-    check_number();
+    calculate_card(check_number());
+
+
 }
 
 
@@ -16,16 +19,22 @@ int check_number(void)
 {
     while(true)
     {
-        int number = get_long("Number: ");
-        while(number > 100){
-             if (number % 10 > 100 )
+        long number = get_long("Number: ");
+        long newnumber;
+        while(number > 99)
         {
-            number % 10;
-        }
-        printf("%d",number);
+            number = number / 10;
 
         }
+        newnumber = number;
+        if(newnumber = )
+        printf("%ld\n", newnumber);
+        return number;
 
     }
+int calculate_card(number)
+{
+    return statement;
+}
 
 }
