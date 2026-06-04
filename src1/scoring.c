@@ -3,7 +3,8 @@
 
 int main(void)
 {
-    int score1,score2,score3 = 72,73,33
+    int scores[3];
+    scores[0] = get_int("Scoer)
 
     printf("Average: %f\n", (score1 + score2 + score3) / 3.0);
 
