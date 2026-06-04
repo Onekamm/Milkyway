@@ -7,6 +7,6 @@ int main(void)
     int score2 = 73;
     int score3 = 33;
 
-    printf("Average: %d", (score1 + score2 + score3) / 3);
+    printf("Average: %d\n", (score1 + score2 + score3) / 3);
 
 }
