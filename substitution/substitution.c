@@ -33,7 +33,7 @@ int validate_argument(int argc, string argv[])
         printf("Please input a 26 character key\n");
         return 1;
     }
-    else if (strlen(argv[1]) == 26)
+    else
     {
         int counter = 0;
         for (int i = 0, j = strlen(argv[1]); i < j; i ++)
