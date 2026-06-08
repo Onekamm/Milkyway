@@ -51,6 +51,7 @@ int validate_argument(int argc, string argv[])
         for (int i = 0 ,j = strlen(argv[1]); i < j; i++)
         {
             printf("%c",argv[1][i]);
+            prinft("%c",ALPHABET[i]);
         }
         printf("%d",counter);
     }
