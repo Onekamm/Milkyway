@@ -1,71 +1,81 @@
 #include <cs50.h>
 #include <ctype.h>
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 
-int process_paragraph(string input);
+int count_letters(string text);
+int count_words(string text);
+int count_sentences(string text);
 
 int main(void)
 {
-    string paragraph = get_string("Please input your Paragraph: \n");
-    if (strlen(paragraph) == 0)
-    {
-        printf("Please input a valid paragraph\n");
-        return 1;
-    }
-    process_paragraph(paragraph);
-}
+    // Prompt the user for some text
+    string text = get_string("Text: ");
 
-int process_paragraph(string input)
-{
-    int word = 0;
-    int sentences = 0;
-    int letters = 0;
-    int index;
-    for (int i = 0, j = strlen(input); i <= j; i++)
-    {
-        if (input[i] == ' ' || input[i] == '\0')
-        {
-            word++;
-        }
-        if (input[i] == '.' || input[i] == '!' || input[i] == '?')
-        {
-            sentences++;
-        }
-        if (isalpha(input[i]))
-        {
-            letters++;
-        }
-    }
+    // Count the number of letters, words, and sentences in the text
+    int letters = count_letters(text);
+    int words = count_words(text);
+    int sentences = count_sentences(text);
 
-    if (sentences == 0 || word == 0)
-    {
-        printf("Please enter a valid paragraph with separated words and sentences\n");
-        return 1;
-    }
-    int L = (letters / (float) word) * 100;
-    int S = (sentences / (float) word) * 100;
-    printf("%i ", L);
-    printf("%i ",S);
+    // Compute the Coleman-Liau index
+    float const L = (letters / (float) words) * 100;
+    float const S = (sentences / (float) words) * 100;
 
-    index = 0.0588 * L - 0.296 * S - 15.8;
+    float index = round(0.0588 * L - 0.296 * S - 15.8);
 
-    //printf("index not rounded: %i\n",index);
-    //index = round(0.0588 * L - 0.296 * S - 15.8);
-    if (index < 1)
+    // Print the grade level
+    if (index <= 1)
     {
         printf("Before Grade 1\n");
-        return 0;
     }
     else if (index >= 16)
     {
         printf("Grade 16+\n");
-        return 0;
     }
     else
     {
-        printf("Grade %i\n", index);
-        return 0;
+        printf("Grade %d\n", (int) index);
     }
+}
+
+int count_letters(string text)
+{
+    int letters = 0;
+    for (int i = 0, j = strlen(text); i <= j; i++)
+    {
+        if (isalpha(text[i]))
+        {
+            letters++;
+        }
+    }
+    return letters;
+}
+
+int count_words(string text)
+{
+    int word = 0;
+    // Return the number of words in text
+    for (int i = 0, j = strlen(text); i <= j; i++)
+    {
+        if ((isblank(text[i]) && isprint(text[i - 1])) || text[i] == '\0')
+        {
+            word++;
+        }
+    }
+    return word;
+}
+
+int count_sentences(string text)
+{
+    int sentence = 0;
+    // Return the number of sentences in text
+    for (int i = 0, j = strlen(text); i <= j; i++)
+    {
+        if (text[i] == '.' || text[i] == '?' || text[i] == '!')
+        {
+            sentence++;
+        }
+    }
+    return sentence;
 }
