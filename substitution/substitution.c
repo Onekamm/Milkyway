@@ -6,6 +6,8 @@
 
 const string ALPHABET[]= {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
 
+const int ALPHALENGTH = 26;
+
 int validate_argument(int argc, string argv[]);
 
 int main(int argc, string argv[])
@@ -36,7 +38,7 @@ int validate_argument(int argc, string argv[])
     else
     {
         int counter = 0;
-        for (int i = 0, j = strlen(argv[1]); i <= j; i ++)
+        for (int i = 0, j = strlen(argv[1]); i < j; i ++)
         {
 
             printf("%c\n",argv[1][i]);
