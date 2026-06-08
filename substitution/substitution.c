@@ -50,9 +50,9 @@ int validate_argument(int argc, string argv[])
         //initialise a for loop
         for (int i = 0 ,j = strlen(argv[1]); i < j; i++)
         {
-            printf("%c",argv[1][i]);
-            if 
-            printf("%s",ALPHABET[i]);
+            //printf("%c",argv[1][i]);
+
+            printf("%c",ALPHABET[i][i]);
         }
         printf("%d",counter);
     }
