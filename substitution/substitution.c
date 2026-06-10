@@ -4,7 +4,7 @@
 #include <math.h>
 #include <string.h>
 
-const string ALPHABET[]= {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+string ALPHABET[]= {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
 
 const int ALPHALENGTH = 26;
 
@@ -43,7 +43,7 @@ int validate_argument(int argc, string argv[])
         //initialise loop
         for(int pointer = 0;pointer < ALPHALENGTH; pointer ++)
         {
-            printf("%c",ALPHABET[pointer]);
+            printf("%c",ALPHABET);
         }
         int counter = 0;
         // initialise a for loop
