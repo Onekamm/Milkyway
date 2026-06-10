@@ -47,12 +47,8 @@ int validate_argument(int argc, string argv[])
 
             for(int subpointer = 0; subpointer < ALPHALENGTH; subpointer ++)
             {
-                    printf("%s\n",argv[pointer]);
+                    printf("%c\n",argv[1][pointer]);
                     //printf("%d\n",counter);
-
-                }
-
-
             }
             //printf("%d",pointer);
         }
