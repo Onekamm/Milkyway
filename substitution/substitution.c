@@ -54,8 +54,11 @@ int validate_argument(int argc, string argv[])
 
                 }
 
+
             }
-            printf("%d",pointer);
+            printf("%d\n",counter);
+
+            //printf("%d",pointer);
         }
         // initialise a for loop
     }
