@@ -41,15 +41,22 @@ int validate_argument(int argc, string argv[])
         //We then need to loop through each character in the loop.
         // then we need to take I and compare it to any character in ALPHABET
         //initialise loop
-        for(int pointer = 0;pointer < ALPHALENGTH; pointer ++)
+        for(int pointer = 0 ; pointer < ALPHALENGTH ; pointer ++)
         {
-            for(int subpointer = pointer; subpointer < ALPHALENGTH; subpointer ++)
+            int counter = 0;
+
+            for(int subpointer = 0; subpointer < ALPHALENGTH; subpointer ++)
             {
-                
+                if(argv1[pointer] == ALPHABET[subpointer])
+                {
+                    counter ++;
+                    printf("%d)
+
+                }
+
             }
             printf("%d",pointer);
         }
-        int counter = 0;
         // initialise a for loop
     }
     return 0;
