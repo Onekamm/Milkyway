@@ -47,9 +47,7 @@ int validate_argument(int argc, string argv[])
 
             for(int subpointer = 0; subpointer < ALPHALENGTH; subpointer ++)
             {
-                if(argv[pointer] == ALPHABET[subpointer])
-                {
-                    counter ++;
+                    printf("%c\n"argv[pointer]);
                     printf("%d\n",counter);
 
                 }
