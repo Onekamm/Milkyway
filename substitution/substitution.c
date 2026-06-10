@@ -38,7 +38,7 @@ int validate_argument(int argc, string argv[])
     else
     {
         int counter = 0;
-        for (int i = 0, j = strlen(argv[1]); i < j; i ++)
+        for (int i = 0, ALPHALENGTH; i < j; i ++)
         {
 
             //printf("%c\n",argv[1][i]);
@@ -46,14 +46,15 @@ int validate_argument(int argc, string argv[])
             printf("Please input alphabetic character\n");
 
             */
+           for ( int n = 0 ,k = strlen(argv[1]); n < k; n++)
+           {
+            //printf("%c",argv[1][i]);
+            printf("%c",ALPHABET[n][n]);
+            }
+
         }
         //initialise a for loop
-        for (int i = 0 ,j = strlen(argv[1]); i < j; i++)
-        {
-            //printf("%c",argv[1][i]);
 
-            printf("%c",ALPHABET[i][i]);
-        }
         printf("%d",counter);
     }
     return 0;
