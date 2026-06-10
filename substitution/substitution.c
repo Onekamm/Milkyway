@@ -43,7 +43,7 @@ int validate_argument(int argc, string argv[])
         //initialise loop
         for(int pointer = 0;pointer < ALPHALENGTH; pointer ++)
         {
-            for(int subpointer = pointer; subpointer < )
+            for(int subpointer = pointer; subpointer < ALPHALENGTH; )
             printf("%s",ALPHABET[pointer]);
         }
         int counter = 0;
