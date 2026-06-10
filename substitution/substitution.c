@@ -41,7 +41,7 @@ int validate_argument(int argc, string argv[])
         for (int i = 0, j = strlen(argv[1]); i < j; i ++)
         {
 
-            printf("%c\n",argv[1][i]);
+            //printf("%c\n",argv[1][i]);
            /***  if(!isalpha(argv[1]))
             printf("Please input alphabetic character\n");
 
