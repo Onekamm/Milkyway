@@ -38,7 +38,8 @@ int validate_argument(int argc, string argv[])
     else
     {
         //This code needs to initialise a for loop that we know contains 26 alpha chars.
-        //We then need to loop through each character in the loop. 
+        //We then need to loop through each character in the loop.
+        // then we need to take I and compare it to any character in ALPHABET 
         int counter = 0;
         // initialise a for loop
     }
