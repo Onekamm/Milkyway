@@ -37,25 +37,10 @@ int validate_argument(int argc, string argv[])
     }
     else
     {
+        //This code needs to initialise a for loop that we know contains 26 alpha chars.
+        //We then need to loop through each character in the loop
         int counter = 0;
-        for (int i = 0, ALPHALENGTH; i < j; i ++)
-        {
-
-            //printf("%c\n",argv[1][i]);
-           /***  if(!isalpha(argv[1]))
-            printf("Please input alphabetic character\n");
-
-            */
-           for ( int n = 0 ,k = strlen(argv[1]); n < k; n++)
-           {
-            //printf("%c",argv[1][i]);
-            printf("%c",ALPHABET[n][n]);
-            }
-
-        }
-        //initialise a for loop
-
-        printf("%d",counter);
+        // initialise a for loop
     }
     return 0;
 }
