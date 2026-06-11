@@ -4,7 +4,7 @@
 #include <math.h>
 #include <string.h>
 
-string ALPHABET[]= {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 const int ALPHALENGTH = 26;
 
@@ -13,6 +13,7 @@ int validate_argument(int argc, string argv[]);
 int main(int argc, string argv[])
 {
     validate_argument(argc,argv);
+
 
 }
 
@@ -30,7 +31,7 @@ int validate_argument(int argc, string argv[])
         return 1;
     }
 
-    else if  (strlen(argv[1]) != 26)
+    else if  (strlen(argv[1]) != ALPHALENGTH)
     {
         printf("Please input a 26 character key\n");
         return 1;
@@ -40,27 +41,51 @@ int validate_argument(int argc, string argv[])
         //This code needs to initialise a for loop that we know contains 26 alpha chars.
         //We then need to loop through each character in the loop.
         // then we need to take I and compare it to any character in ALPHABET
-        //initialise loop
+        //initialise loopint counter = 0;
+        int counter = 0;
+          bool seen[26];
+          for(int truth = 0; truth < ALPHALENGTH;truth++)
+          {
+            seen[truth] = false;
+        }
         for(int pointer = 0 ; pointer < ALPHALENGTH ; pointer ++)
         {
-            int counter = 0;
 
             for(int subpointer = 0; subpointer < ALPHALENGTH; subpointer ++)
             {
-                char arg = ALPHABET[subpointer]
-                //argv[1][pointer]
-                if(argv[1][pointer] == arg)
+                // if the letter in argv is lowercase and the letter in alphabet at the same pointer is uppercase convert it to
+                if(argv[1][pointer] == ALPHABET[subpointer] || argv[1][pointer] == (tolower(ALPHABET[subpointer])))
                 {
-                    counter ++;
+                    if(argv[1][pointer] >= 97 && argv[1][pointer]<= 122)
+                    {
+                        if(!seen[argv[1][pointer] - 97])
+                    {
+                        counter ++;
+                        seen[argv[1][subpointer]- 97] = true;
+                    }
+
+                    }
+                    if(argv[1][pointer] >= 65 && argv[1][pointer]<= 90)
+
+                    if(!seen[argv[1][pointer] - 65])
+                    {
+                        counter ++;
+                        seen[argv[1][subpointer]- 65] = true;
+                    }
                 }
             }
             //printf("%d",pointer);
-            //printf("%d", counter);
         }
-        // initialise a for loop
-        printf("%c",ALPHABET[0])
+        if (counter == ALPHALENGTH)
+        {
+            return 0;
+        }
+        else
+        {
+            printf("Please input a full alphabet\n");
+            return 1;
+        }
     }
-    return 0;
 }
 
 
