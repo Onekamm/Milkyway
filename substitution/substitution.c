@@ -9,10 +9,13 @@ string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const int ALPHALENGTH = 26;
 
 int validate_argument(int argc, string argv[]);
+int do_substitution(string argument);
+
 
 int main(int argc, string argv[])
 {
     validate_argument(argc,argv);
+    do_substitution(argv[1]);
 
 
 }
@@ -86,6 +89,36 @@ int validate_argument(int argc, string argv[])
             return 1;
         }
     }
+}
+
+int do_substitution(string argument)
+{
+    //store argv[1] into a string so it's easier to work with for my small brain.
+    string key = argument;
+    // get the user string.
+    string plaintext = get_string("plaintext:");
+    string ciphertext;
+    // Once reaching this point we have a validated user plaintext.
+    //now we need to take the key and make it the alphabet
+    // Logically speaking the easiest way to complete this program is to swap the elements with the positional value in the array.
+    // first thing is compare the value of key to alphabet and determine whether it's higher or lower.
+    // initialise a loop to go through the cipher text / plaintext
+    //getting individual character to check for in alphabet.
+    int len_text = strlen(plaintext);
+    for (int i = 0; i < len_text; i++)
+    {
+        //creating a string of the current individual character
+        char individualchar[] = {toupper(plaintext[i]),'\0'};
+        //getting the index value of n plaintext in alphabet
+        int alphapointer = strcspn(ALPHABET,individualchar);
+
+        printf("%s\n",individualchar);
+        printf("%d\n",alphapointer);
+
+    }
+
+    return 0;
+
 }
 
 
