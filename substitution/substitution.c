@@ -114,8 +114,8 @@ int do_substitution(string argument)
 
         printf("%s\n",individualchar);
         printf("%d\n",alphapointer);
-
     }
+    for (int i = 0, j = )
 
     return 0;
 
