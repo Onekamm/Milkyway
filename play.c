@@ -31,5 +31,11 @@ void draw(int n)
         printf("#");
     }
     printf("\n");
+    for (int i = n; i > 0; i--)
+    {
+        printf("#");
+    }
+    printf("\n");
+
 }
 
