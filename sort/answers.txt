@@ -9,3 +9,10 @@ How do you know?: TODO
 sort3 uses: TODO
 
 How do you know?: TODO
+
+
+
+
+Let's do this somewhat scientifically?
+For this im going to run each algorithm 10 times against the various files. Then I'll record the results as well as the average for each
+problem set.
