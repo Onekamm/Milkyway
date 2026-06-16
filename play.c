@@ -2,17 +2,34 @@
 #include <string.h>
 #include <stdio.h>
 
-typedef struct
-{
-    string name;
-    string dateofbirth;
-    int age;
-} person
-
-
+void draw(int n);
 
 
 int main(void)
 {
-    string who = get_string("Search: ");
+    // Get height of pyramid
+    int height = get_int("Height: ");
+
+    // Draw pyramid
+    draw(height);
 }
+
+void draw(int n)
+{
+    // If nothing to draw
+    if (n <= 0)
+    {
+        return;
+    }
+
+    // Draw pyramid of height n - 1
+    draw(n - 1);
+
+    // Draw one more row of width n
+    for (int i = 0; i < n; i++)
+    {
+        printf("#");
+    }
+    printf("\n");
+}
+
