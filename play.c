@@ -5,18 +5,10 @@
 
 
 
-int main(int argc, string argv[])
+int main(void)
 {
-    string striiing = get_string("Input ");
+    int numbers[] = {20,100,10,200,30,15,25,60};
 
-    for (int i = 0 ,j = strlen(striiing); i < j - 1;i++)
-
-    {
-        if (striiing[i] > striiing[i + 1])
-        {
-            printf("No\n");
-            return 0;
-        }
-    }
-    printf("Yes\n");
+    int n = get_number("Number: ");
+    
 }
