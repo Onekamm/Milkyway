@@ -81,8 +81,7 @@ void print_winner(void)
 {
     for (int i = 0, j = candidate_count; i < j; i++)
     {
-        for (j = 0, k)
-
+        
     }
     return;
 }
