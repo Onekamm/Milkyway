@@ -10,7 +10,7 @@ Over the largest sample size it took the shortest number of time to sort a rando
 sort3 uses: selection sort
 
 How do you know?:
-The overall runtime of sort3 was slower than sort1 and 
+The overall runtime of sort3 was slower than sort1 on average implying that it is a slower algorithm on a sorted list but they have very similar times on a non sorted list.
 
 
 
