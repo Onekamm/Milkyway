@@ -129,4 +129,5 @@ Sort1 sorted 50000
 17.134
 Average: 12.174764705882
 
+sort2 sorted 50000
 
