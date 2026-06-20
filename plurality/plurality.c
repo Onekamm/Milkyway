@@ -79,9 +79,18 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
+    int max_vote;
     for (int i = 0, j = candidate_count; i < j; i++)
     {
-        
+        max_vote = 0;
+        if(candidates.votes[i] > candidates.votes[i+1])
+        {
+            max_vote = candidate.votes[i];
+        }
+    }
+    if (candidate.votes == max_vote)
+    {
+        printf("%s", )
     }
     return;
 }
