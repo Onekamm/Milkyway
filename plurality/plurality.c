@@ -83,12 +83,12 @@ void print_winner(void)
     for (int i = 0, j = candidate_count; i < j; i++)
     {
         max_vote = 0;
-        if(candidates.votes[i] > candidates.votes[i+1])
+        if(candidates[i].votes > candidates[i+1].votes)
         {
-            max_vote = candidate.votes[i];
+            max_vote = candidates[i].votes;
         }
     }
-    if (candidate.votes == max_vote)
+    if (candidates.votes == max_vote)
     {
         printf("%s", candidates.name)
     }
