@@ -185,4 +185,6 @@ Sort1 random 5000
 Average: 0.058133333333333
 
 Sort2 random 5000
+0.013
+0.014
 
