@@ -64,5 +64,6 @@ Average: 3.5586
 
 
 
-Sort1 sorted 5000
-
+Sort1 reversed 50000
+18.038
+12.399
