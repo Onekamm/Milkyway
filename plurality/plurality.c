@@ -90,7 +90,7 @@ void print_winner(void)
     }
     if (candidate.votes == max_vote)
     {
-        printf("%s", )
+        printf("%s", candidates.name)
     }
     return;
 }
