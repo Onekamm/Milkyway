@@ -2,9 +2,10 @@ sort1 uses: TODO
 
 How do you know?: TODO
 
-sort2 uses: TODO
+sort2 uses: Merge sort
 
-How do you know?: TODO
+How do you know?:
+Over the largest sample size it took the shortest number of time to sort a randomly ordered list of numbers.
 
 sort3 uses: TODO
 
