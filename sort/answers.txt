@@ -1,15 +1,16 @@
-sort1 uses: TODO
+sort1 uses: Bubble sort
 
-How do you know?: TODO
+How do you know?: The lowest runtime on a sorted sample size was overall smaller than the runtime of sort 3
 
 sort2 uses: Merge sort
 
 How do you know?:
 Over the largest sample size it took the shortest number of time to sort a randomly ordered list of numbers.
 
-sort3 uses: TODO
+sort3 uses: selection sort
 
-How do you know?: TODO
+How do you know?:
+The overall runtime of sort3 was slower than sort1 and 
 
 
 
