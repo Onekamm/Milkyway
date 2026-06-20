@@ -16,3 +16,53 @@ How do you know?: TODO
 Let's do this somewhat scientifically?
 For this im going to run each algorithm 10 times against the various files. Then I'll record the results as well as the average for each
 problem set.
+
+
+
+
+Sort1 random 50000.
+7.827s
+7.614
+7.632
+7.317
+6.921
+7.300
+7.108
+6.927
+7.508
+7.807
+Average: 7.3961
+//huge sample size small variation in margin ot timing.
+
+
+
+Sort2 random 50000
+1.071
+0.0965
+0.0898
+1.036
+1.019
+0.0755
+0.879
+0.909
+0.888
+1.040
+Average: 0.71038
+
+Sort 3
+3.084
+3.537
+3.618
+4.163
+4.186
+3.903
+2.982
+3.356
+3.078
+3.679
+Average: 3.5586
+
+
+
+Sort1 sorted 5000
+
