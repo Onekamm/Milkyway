@@ -129,7 +129,7 @@ bool vote(int voter, int rank, string name)
     // TODO
     for (int i = 0, j = candidate_count, i < j; i ++)
     {
-        if 
+        if
 
     }
     return false;
