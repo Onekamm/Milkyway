@@ -8,12 +8,25 @@ typedef struct
     int votes;
 } candidate;
 
+
+candidate get_candidate(void);
+
 int main(void)
+{
+
+    printf("%s has %d votes.\n", one.name, one.votes);
+}
+
+
+
+candidate get_candidate(void)
 {
     candidate one;
 
     one.name = get_string("Name: ");
     one.votes = get_int("Votes: ");
 
-    printf("%s has %d votes.\n", one.name, one.votes);
+
+
+    return one;
 }
