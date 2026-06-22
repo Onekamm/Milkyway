@@ -132,7 +132,7 @@ bool vote(int voter, int rank, string name)
         if(strcomp(name,candidate[i].name) == 0)
         {
             candidate[i].votes ++;
-            
+            preferme
 
         }
 
