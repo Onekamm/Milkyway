@@ -13,8 +13,8 @@ candidate get_candidate(void);
 
 int main(void)
 {
-
-    printf("%s has %d votes.\n", ballot.one.name, ballot.one.votes);
+    candidate one = get_candidate();
+    printf("%s has %d votes.\n", one.name, one.votes);
 }
 
 
