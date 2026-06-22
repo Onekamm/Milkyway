@@ -126,10 +126,14 @@ int main(int argc, string argv[])
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
-    // TODO
+    // begin my loop to go through candidate
     for (int i = 0, j = candidate_count, i < j; i ++)
     {
-        if
+        if(strcomp(name,candidate[i].name) == 0)
+        {
+            
+
+        }
 
     }
     return false;
