@@ -15,5 +15,5 @@ int main(void)
     one.name = get_string("Name: ");
     one.votes = get_int("Votes: ");
 
-    printf("%s\n%d\n", one.name, one.votes);
+    printf("%s has %d votes.\n", one.name, one.votes);
 }
