@@ -1,15 +1,12 @@
+#include <cs50.h>
 #include <stdio.h>
 #include <string.h>
-#include <cs50.h>
-
-
 
 typedef struct
 {
-  string name;
-  int votes;
+    string name;
+    int votes;
 } candidate;
-
 
 int main(void)
 {
@@ -18,10 +15,5 @@ int main(void)
     one.name = get_string("Name: ");
     one.votes = get_int("Votes: ");
 
-
-    printf("%s\n%d\n",one.name,one.votes);
-
+    printf("%s\n%d\n", one.name, one.votes);
 }
-
-
-
