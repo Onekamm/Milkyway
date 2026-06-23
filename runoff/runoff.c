@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -127,14 +128,14 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // begin my loop to go through candidate
-    for (int i = 0, j = candidate_count, i < j; i ++)
+    for (int i = 0, j = candidate_count; i < j; i ++)
     {
-        if(strcomp(name,candidate[i].name) == 0)
+        if(strcmp(name, candidates[i].name) == 0)
         {
-            candidate[i].votes ++;
-            preferme
-
-        }
+            candidates[i].votes ++;
+            preferences[i][rank - 1] = candida
+            return true;
+         }
 
     }
     return false;
