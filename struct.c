@@ -9,24 +9,24 @@ typedef struct
 } candidate;
 
 
-candidate get_candidate(void)[3];
+candidate get_candidate(void);
 
 int main(void)
 {
-    candidate one = get_candidate();
+    candidate one[3] = get_candidate();
     printf("%s has %d votes.\n", one.name, one.votes);
 }
 
 
 
-candidate get_candidate(void)[3]
+candidate get_candidate(void)
 {
-    candidate one[3];
+    candidate one;
 
-    for (int i = 0; i < 3 ; i ++)
-    {
-         one[i].name = get_string("Name: ");
-         one[i].votes = get_int("Votes: ");
-    }
+    one.name = get_string("Name: ");
+    one.votes = get_int("Votes: ");
+
+
+
     return one;
 }
