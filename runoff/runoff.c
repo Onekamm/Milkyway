@@ -176,7 +176,7 @@ bool is_tie(int min)
     {
         if (candidates[i].votes == candidates [i+1].votes)
         {
-            last_vote = candidates[i].votes;
+            continue;
         }
 
 
