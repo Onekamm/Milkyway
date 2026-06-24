@@ -18,8 +18,9 @@ int main(void)
 
 int fibonacci(int n)
 {
+    int f = 0;
     //base case
-    if(n == 0)
+    if(f == n)
     {
         return 1;
     }
