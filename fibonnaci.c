@@ -26,5 +26,5 @@ int fibonacci(int n)
     }
 
     //recursion
-    return n + fibonacci(n - 1);
+    return f + fibonacci(f + 1);
 }
