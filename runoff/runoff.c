@@ -151,7 +151,14 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    // TODO
+    int max_vote = 0;
+    for (int i = 0, j = candidate_count; i < j; i++)
+    {
+        if (candidates[i].votes > candidates[i + 1].votes && candidates[i].votes > max_vote)
+        {
+            max_vote = candidates[i].votes;
+        }
+    }
     return false;
 }
 
@@ -161,10 +168,15 @@ int find_min(void)
   int min_vote = 0;
     for (int i = 0, j = candidate_count; i < j; i++)
     {
-        if (candidates[i].votes < candidates[i + 1].votes && candidates[i].votes < min_vote)
+        if (!candidates[i].eliminated)
+        {
+            if (candidates[i].votes < candidates[i + 1].votes && candidates[i].votes < min_vote)
         {
             min_vote = candidates[i].votes;
         }
+
+        }
+
     }    return min_vote;
 }
 
@@ -173,7 +185,7 @@ bool is_tie(int min)
 {
     for ( int i = 0 , j = candidate_count; i < j ; i ++)
     {
-        if (candidates[i].votes == candidates [i+1].votes)
+        if (candidates[i].votes == min)
         {
             continue;
         }
@@ -181,8 +193,6 @@ bool is_tie(int min)
         {
             break;
         }
-
-
         return true;
     }
     return false;
