@@ -18,7 +18,7 @@ int main(void)
 
 int fibonacci(int n)
 {
-    int f = 0;
+    int f = 1;
     //base case
     if(f == n)
     {
@@ -26,5 +26,5 @@ int fibonacci(int n)
     }
 
     //recursion
-    return f + fibonacci(f + 1);
+    return fibonacci(f + 1);
 }
