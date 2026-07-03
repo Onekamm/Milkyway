@@ -124,7 +124,7 @@ int main(int argc, string argv[])
     return 0;
 }
 
-// Record preference if vote is valid
+// Record preference if vote is val
 bool vote(int voter, int rank, string name)
 {
     // begin my loop to go through candidate
