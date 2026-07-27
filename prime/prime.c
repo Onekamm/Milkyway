@@ -44,7 +44,7 @@ bool prime(int number)
         {
             return false;
         }
-        else
+        if (number )
         {
             return true;
         }
