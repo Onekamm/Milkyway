@@ -19,9 +19,7 @@ int main(void)
 float half(float bill, float tax, int tip)
 {
     bill = bill + bill * (tax / 100);
-    printf("newbill = %f",bill);
     bill = bill + bill * ((float) tip / 100);
-    printf("tip / 100 = %i",tip/100);
 
-    return 1;
+    return bill / 2 ;
 }
