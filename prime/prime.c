@@ -38,7 +38,7 @@ bool prime(int number)
     {
         return true;
     }
-    for (int i = 2, max = number; i < max; i ++);
+    for (int i = 2, max = number; i < max; i ++)
     {
         if (number % i == 0)
         {
@@ -49,8 +49,6 @@ bool prime(int number)
             return true;
         }
     }
-    else
-    {
-        return false;
-    }
+    return false;
+
 }
