@@ -30,7 +30,15 @@ int main(void)
 
 bool prime(int number)
 {
-    if (number % number == 0  && number % 1 == 0)
+    if (number == 2)
+    {
+        return true;
+    }
+    if( number == 3)
+    {
+        return true;
+    }
+    if ( number / number == 1 && number / 1 == number)
     {
         return true;
     }
