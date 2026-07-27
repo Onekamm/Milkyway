@@ -30,6 +30,8 @@ int main(void)
 
 bool prime(int number)
 {
-    for (int min = min,max = max; min ++;)
-    return false;
+    if (number % number == 0  && number % 1 == 0)
+    {
+        return true;
+    }
 }
