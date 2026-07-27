@@ -38,9 +38,16 @@ bool prime(int number)
     {
         return true;
     }
-    if ( number / number == 1 && number / 1 == number)
+    for (int i = 2, max = number; i < max; i ++);
     {
-        return true;
+        if (number % i == 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
     else
     {
