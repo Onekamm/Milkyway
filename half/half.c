@@ -18,7 +18,8 @@ int main(void)
 // TODO: Complete the function
 float half(float bill, float tax, int tip)
 {
-    int bill_after_tax = bill + bill * (tax / 100);
-    printf("%i",bill_after_tax);
-    return 1;
+    bill = bill + bill * (tax / 100);
+    bill = bill + bill * (tip / 100);
+
+    return bill / 2;
 }
