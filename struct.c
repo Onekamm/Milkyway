@@ -1,0 +1,32 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+typedef struct
+{
+    string name;
+    int votes;
+} candidate;
+
+
+candidate get_candidate(void);
+
+int main(void)
+{
+    candidate one[3] = get_candidate();
+    printf("%s has %d votes.\n", one.name, one.votes);
+}
+
+
+
+candidate get_candidate(void)
+{
+    candidate one;
+
+    one.name = get_string("Name: ");
+    one.votes = get_int("Votes: ");
+
+
+
+    return one;
+}

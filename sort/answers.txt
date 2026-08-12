@@ -1,0 +1,235 @@
+sort1 uses: Bubble sort
+
+How do you know?: The lowest runtime on a sorted sample size was overall smaller than the runtime of sort 3
+
+sort2 uses: Merge sort
+
+How do you know?:
+Over the largest sample size it took the shortest number of time to sort a randomly ordered list of numbers.
+
+sort3 uses: selection sort
+
+How do you know?:
+The overall runtime of sort3 was slower than sort1 on average implying that it is a slower algorithm on a sorted list but they have very similar times on a non sorted list.
+
+
+
+
+Let's do this somewhat scientifically?
+For this im going to run each algorithm 10 times against the various files. Then I'll record the results as well as the average for each
+problem set.
+
+
+
+
+Sort1 random 50000.
+7.827s
+7.614
+7.632
+7.317
+6.921
+7.300
+7.108
+6.927
+7.508
+7.807
+Average: 7.3961
+//huge sample size small variation in margin ot timing.
+
+
+
+Sort2 random 50000
+1.071
+0.0965
+0.0898
+1.036
+1.019
+0.0755
+0.879
+0.909
+0.888
+1.040
+Average: 0.71038
+
+Sort 3
+3.084
+3.537
+3.618
+4.163
+4.186
+3.903
+2.982
+3.356
+3.078
+3.679
+Average: 3.5586
+
+
+
+Sort1 reversed 50000
+18.038
+12.399
+13.561
+13.270
+13.656
+12.944
+14.991
+15.288
+10.661
+14.147
+Average: 13.8955
+
+Sort2 reversed 50000
+11.030
+4.315
+6.671
+6.932
+26.997
+9.651
+13.107
+14.563
+20.144
+25.730
+14.936
+Average: 14.006909090909
+
+sort3 reversed 50000
+8.705
+8.017
+14.090
+15.476
+9.867
+7.714
+10.602
+9.704
+11.107
+4.827
+9.654
+9.901
+9.170
+
+Average: 9.9103076923077
+
+
+Sort1 sorted 50000
+10.575
+21.314
+5.645
+9.127
+28.833
+8.432
+12.402
+10.248
+12.403
+10.328
+19.367
+14.585
+16.908
+4.158
+2.369
+3.143
+17.134
+Average: 12.174764705882
+
+sort2 sorted 50000
+40.301
+15.800
+18.020
+30.171
+22.139
+14.048
+18.714
+14.855
+17.591
+82.409
+9.083
+
+Average: 25.739181818182
+
+Sort 3 sorted 50000
+26.519
+13.134
+11.459
+8.626
+5.389
+6.916
+6.559
+33.653
+9.110
+9.912
+7.666
+6.089
+6.544
+5.877
+14.375
+5.211
+
+Average: 11.0649375
+
+
+
+Sort1 random 5000
+0.062
+0.054
+0.061
+0.056
+0.072
+0.051
+0.056
+0.052
+0.053
+0.057
+0.054
+0.058
+0.054
+0.056
+0.076
+Average: 0.058133333333333
+
+Sort2 random 5000
+0.013
+0.014
+0.013
+0.025
+0.028
+0.027
+0.018
+0.014
+0.027
+0.017
+0.017
+0.019
+0.017
+0.016
+0.021
+0.016
+0.014
+0.014
+
+Average: 0.018333333333333
+
+Sort3 random 5000
+0.041
+0.053
+0.054
+0.057
+0.043
+0.051
+0.039
+0.055
+0.044
+0.039
+0.045
+0.046
+0.039
+0.046
+0.045
+0.053
+0.048
+0.045
+0.039
+
+Average: 0.046421052631579
+
+
+
